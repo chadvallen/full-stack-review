@@ -69,7 +69,16 @@
 * users
     * id serial
     * auth0_id text
-    * 
+    * email text
+    * name text
+    * picture text
+
+## Queries (functions for massive)
+
+* select all couches
+* find user
+* create user
+* create couch?
 
 
 
