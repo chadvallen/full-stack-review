@@ -11,8 +11,8 @@ module.exports = {
             .then(storeUserInfoInDatabase)
             .catch(error => {
                 console.error('A problem occurred in handleCallback', error);
-                res.status(500).send('An unexpected error happened on the server');
-            })
+                res.status(500).send('An unexpected error happened on the server!!');
+            });
 
         function exchangeCodeForAccessToken() {
             const payload = {
@@ -54,7 +54,7 @@ module.exports = {
                         res.redirect('/cool-couches');
                     }).catch(error => {
                         console.error('error inserting user into database', error);
-                        res.status(500).send('An unexpected error happened on the server');
+                        res.status(500).send('An unexpected error happened on the server!');
                     })
                 }
             })
