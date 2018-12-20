@@ -1,3 +1,11 @@
 img {
     max-width: 500px;
 }
+
+body {
+    background: rgb(203, 203, 203);
+}
+
+.app {
+    text-align: center;
+}
